@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="roboto-regular">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ site.title }}</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+	{% for css in page.extra_css %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/{{ css }}">
+	{% endfor %}
+</head>
+<body>
+	{% include header.html %}
+	
+	<main class="default-color">
+		{{ content }}
+	</main>
+
+	{% include footer.html %}
+</body>
+</html>
