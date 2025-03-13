@@ -1,0 +1,140 @@
+---
+---
+
+$small_screen: "only screen and (max-width: 1200px)";
+$portrait_layout: "(max-width: 800px)";
+
+
+#intro-section {
+	// background: url("/assets/code.png");
+
+	max-height: none;
+	background-color: white;
+	position: relative;
+}
+
+#intro-background {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	img {
+		display: block;
+		width: 100%;
+		max-width: none;
+		align-self: center;
+		transition: height 1s;
+	}
+	mix-blend-mode: hard-light;
+	transition: width 1s;
+}
+
+#intro-content {
+	position: relative;
+	background-color: white;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: 20px;
+	max-width: 32%;
+	h1 {
+		font-size: 4.5em;
+		text-align: left;
+		margin-left: 0;
+		margin-bottom: 30px;
+	}
+	h2 {
+		text-transform: none;
+	}
+	strong {
+		white-space: normal;
+	}
+	transition: max-width 1s;
+}
+
+#portrait {
+	$size: 18%;
+	position: absolute;
+	height: auto;
+	width: $size;
+	top: 0;
+	bottom: 0;
+	border-radius: 20%;
+	object-position: top;
+	object-fit: cover;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 0;
+
+	transition: margin-left 1s, width 1s;
+}
+
+
+/* Smaller portrait for little screens */
+@media #{$small_screen} {
+	#intro-background {
+		width: 150%;
+	}
+
+	#intro-content {
+		max-width: 50%;
+	}
+
+	#portrait {
+		margin-left: 50%;
+		width: 27%;
+	}
+}
+
+@media #{$portrait_layout} {
+	$portrait_size_factor: 0.666;
+	$portrait_background_size: 1300px;
+	
+	#intro-section {
+		height: calc(#{$portrait_size_factor} * #{$portrait_background_size});
+	}
+
+	#intro-background {
+		width: #{$portrait_background_size};
+		height: #{$portrait_background_size};
+		left: calc(50% - #{$portrait_background_size} / 2);
+		img {
+			transform: rotate(90deg);
+		}
+		transition: none;
+	}
+
+	#intro-content {
+		max-width: 600px;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		transition: none;
+		min-height: 40%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		h1 {
+			font-size: 3em;
+			margin-bottom: 20px;
+		}
+		h2 {
+			font-size: 1.2em;
+			margin: 12px 0;
+		}
+	}
+
+	#portrait {
+		top: calc(#{$portrait_background_size} * 0.425);
+		right: 0;
+		left: 0;
+		bottom: 0;
+		margin: 0 auto auto;
+		width: calc(#{$portrait_background_size} * 0.15);
+	}
+}

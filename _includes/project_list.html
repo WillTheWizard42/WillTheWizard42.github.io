@@ -1,0 +1,20 @@
+<div class="banner dark banner-color">
+	<h1><a id="{{ include.type.id }}" class="anchor"></a>{{ include.type.title }}</h1>
+</div>
+<div class="flex-wrap project-list">
+
+	{% assign projects = site.data.projects %}
+	{% for project in projects %}
+		{% if project[1].type == include.type.id %}
+			{% capture target_id %}{{ project[0] }}{% endcapture %}
+			{% for preview in site.previews %}
+				{% if preview.project_id == target_id %}
+					<section class="content-color">
+						{{ preview }}
+					</section>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+	
+</div>

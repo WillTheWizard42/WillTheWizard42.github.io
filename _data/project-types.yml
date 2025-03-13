@@ -1,0 +1,7 @@
+solo-games:
+  title: Games
+  id: solo-games
+
+other:
+  title: Other projects
+  id: other

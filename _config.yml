@@ -20,18 +20,39 @@
 
 title: William Adams - Portfolio
 email: wdtadams@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines
   Hi! I'm William Adams and I like making games. Here you can find some of the games 
   and other projects I've made. Feel free to contact me by email or LinkedIn.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  WillTheWizard42
-permalink: none
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  previews:
+    output: false
+  solo-games:
+    output: true
+  other-projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "previews"
+    values:
+      layout: preview
+  - scope:
+      path: ""
+      type: "solo-games"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "other-projects"
+    values:
+      layout: page
 
 # Exclude from processing.
 # The following items will not be processed, by default.

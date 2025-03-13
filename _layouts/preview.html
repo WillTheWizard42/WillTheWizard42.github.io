@@ -1,0 +1,5 @@
+{% assign project = site.data.projects[page.project_id] %}
+
+<h1>{% if project.post %}<a id="{{ page.project_id }}" href="{{ project.post }}">{% endif %}{{ project.title }}{% if project.post %}</a>{% endif %}</h1>
+<h3>{{ project.language }}</h3>
+{{ content }}

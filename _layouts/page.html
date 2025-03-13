@@ -2,8 +2,11 @@
 layout: wrapper
 ---
 
-<section class="content-color">
-	<h1 class="huge roboto-bold">{{ page.title }}</h1>
+{% assign project = site.data.projects[page.project_id] %}
+
+<section class="container content-color">
+	<h1 class="huge roboto-bold">{{ project.title }}</h1>
+	{% if project.language %}<h3>{{project.language}}</h3>{% endif %}
 	<div>
 		{{ content }}
 	</div>

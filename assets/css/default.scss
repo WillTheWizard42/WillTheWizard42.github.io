@@ -1,7 +1,7 @@
 ---
 ---
 
-$menu-height: calc(20px + 1rem);
+$menu-height: calc(63px + 1rem);
 $background-color: #0f13d9;
 $background-button-color: #0066ff;
 
@@ -65,7 +65,7 @@ header {
 	}
 
 	/* Custom menu for small screens */
-	@media only screen and (max-width: 800px) {
+	@media only screen and (max-width: 850px) {
 		padding: 0;
 		.menu {
 			order: -1;
@@ -298,7 +298,7 @@ section {
 	&.auto-height {
 		min-height: 350px;
 		max-height: 600px;
-		height: calc(100vh - #{$menu-height});
+		height: calc(50vh - #{$menu-height});
 	}
 	> img {
 		max-width: calc(100% + 20px);
@@ -313,8 +313,8 @@ section {
 	margin: 0 auto;
 	max-width: 100%;
 	box-sizing: border-box;
-	width: 800px;
-	padding: 10px 20px;
+	width: 1200px;
+	padding: 10px 80px 50px;
 	> div {
 		width: 100%;
 	}
@@ -349,7 +349,7 @@ section {
 	}
 }
 
-.event-list {
+.project-list {
 	max-width:1500px;
 }
 

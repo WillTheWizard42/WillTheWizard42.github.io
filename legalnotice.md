@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: containerless-page
 title: Legal notice
 permalink: /legalnotice/
 ---

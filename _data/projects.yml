@@ -1,0 +1,35 @@
+Zeppelinator:
+  type: solo-games
+  title: Zeppelinator
+  language: Python - Pygame
+  post: /solo-games/zeppelinator
+
+Block-faller:
+  type: solo-games
+  title: Block faller
+  language: C# - Unity
+  post: /solo-games/block-faller
+
+Multi-agents:
+  type: other
+  title: Multi-agent systems
+  language: Java
+  post: /other-projects/multi-agents
+
+Blobwar-AI:
+  type: other
+  title: Blobwar AI
+  language: Rust
+  post: /other-projects/blobwar-ai
+
+Ray-tracing:
+  type: other
+  title: Ray-tracing renderer
+  language: C++ - GLSL
+  post: /other-projects/ray-tracing
+
+Blobwar-game:
+  type: solo-games
+  title: Blobwar
+  language: C# - Unity
+  post: /solo-games/blobwar-game
