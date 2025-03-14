@@ -19,5 +19,6 @@ This was more of a learning experience for me rather than trying to make a full 
 
 #### Links
 
-- [Source code](https://gitlab.com/adamsw/block-faller)
+- [Play here](https://willthewizard42.itch.io/block-faller)
+- [Source code](https://github.com/WillTheWizard42/Block-faller)
 - [Unity](https://unity.com/)
