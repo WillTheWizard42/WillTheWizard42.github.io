@@ -11,7 +11,8 @@ extra_css: introduction.css
 		<h2>Hi!</h2>
 		<p>
 			I'm William Adams and I like making and playing games. 
-			I like all kinds of games, but my favorites are definitely strategy and competitive games.<br/> 
+			I like all kinds of games, but my favorites are definitely strategy and competitive games.<br/><br/>
+			As a professional, I worked for two years on Microsoft Flight Simulator 2024. This allowed me to greatly improve many of my skills, particularly C++ programming.<br/><br/>
 			Here you can find some of the games and other projects I've made. Feel free to contact me by email or LinkedIn <a href="/contact">here</a>.
 		</p>
 	</div>
