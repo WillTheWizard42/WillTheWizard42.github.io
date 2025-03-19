@@ -7,7 +7,7 @@ project_id: Zeppelinator
 When I first started coding, I was advised to start by learning Python, as it was easy to get into. <br />
 Very fast, I decided to make a game with a few of my friends, and this is what we made.
 
-As a first project, it did not respect software development best practices. I've therefore refactored the code to be more readable and maitainable. That being said, it still contains many magic numbers that really should be in configuration files. I've also not bothered to fix the fact that the game can only be played on a fixed resolution of 1680 x 1050 pixels.
+As a first project, it did not respect software development best practices. I've therefore refactored the code to be more readable and maintainable. That being said, it still contains many magic numbers that really should be in configuration files. I've also not bothered to fix the fact that the game can only be played on a fixed resolution of 1680 x 1050 pixels.
 
 #### The game
 
