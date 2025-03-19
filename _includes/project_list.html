@@ -9,9 +9,13 @@
 			{% capture target_id %}{{ project[0] }}{% endcapture %}
 			{% for preview in site.previews %}
 				{% if preview.project_id == target_id %}
-					<section class="content-color">
-						{{ preview }}
-					</section>
+				
+					{% if project[1].post %}<a id="{{ preview.project_id }}" href="{{ project[1].post }}" class="content-color" style="text-decoration:none; color:inherit;">{% endif %}
+						<section>
+							{{ preview }}
+						</section>
+					{% if project[1].post %}</a>{% endif %}
+
 				{% endif %}
 			{% endfor %}
 		{% endif %}
