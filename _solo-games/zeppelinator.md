@@ -15,7 +15,7 @@ As the player, you control a Zeppelin and must drop bombs on the canons shooting
 
 The game ends when the player runs out of health, the goal is to get the highest possible score before that happens.
 
-Use **w-a-s-d** to move and spacebar to drop bombs.
+Use the arrow keys ↑ ← ↓ →  to move and spacebar to drop bombs.
 
 The music is Hell March 2 from Red Alert 2.
 
