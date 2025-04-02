@@ -33,3 +33,9 @@ Blobwar-game:
   title: Blobwar
   language: C# - Unity
   post: /solo-games/blobwar-game
+
+Mandelbrot:
+  type: other
+  title: Mandelbrot set visualizer
+  language: Unreal Engine - Blueprints
+  post: /other-projects/mandelbrot
