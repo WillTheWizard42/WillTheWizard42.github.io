@@ -10,7 +10,9 @@ extra_css: introduction.css
 	<div id="intro-content">
 		<h2>Hi!</h2>
 		<p>
-			I'm William Adams and I like making and playing games. 
+			I'm William Adams and I like coding and mathematics. <br/>
+			I graduated from Grenoble INP - ENSIMAG, the most prestigious software engineering school in France, in September 2023. <br/><br/>
+			I especially like making simulations and games, but also enjoy making other things.
 			I like all kinds of games, but my favorites are definitely strategy and competitive games.<br/><br/>
 			As a professional, I worked for two years on Microsoft Flight Simulator 2024. This allowed me to greatly improve many of my skills, particularly C++ programming.<br/><br/>
 			Here you can find some of the games and other projects I've made. Feel free to contact me by email or LinkedIn <a href="/contact">here</a>.
